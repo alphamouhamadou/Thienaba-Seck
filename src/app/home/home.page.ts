@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {NavController} from '@ionic/angular';
+
 
 @Component({
   selector: 'app-home',
@@ -6,7 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
-  constructor() {}
-
+Articles : any[];
+  constructor(public navCtrl: NavController) {
+    this.Articles = [
+      {}
+    ]
+  }
 }
