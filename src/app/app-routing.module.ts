@@ -12,6 +12,14 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'ibnoul',
+    loadChildren: () => import('./ibnoul/ibnoul.module').then( m => m.IbnoulPageModule)
+  },
+  {
+    path: 'firi',
+    loadChildren: () => import('./firi/firi.module').then( m => m.FiriPageModule)
+  },
+  {
     path: 'alif',
     loadChildren: () => import('./alif/alif.module').then( m => m.AlifPageModule)
   },
@@ -130,6 +138,14 @@ const routes: Routes = [
   {
     path: 'lamalif',
     loadChildren: () => import('./lamalif/lamalif.module').then( m => m.LamalifPageModule)
+  },
+  {
+    path: 'ibnoul',
+    loadChildren: () => import('./ibnoul/ibnoul.module').then( m => m.IbnoulPageModule)
+  },
+  {
+    path: 'firi',
+    loadChildren: () => import('./firi/firi.module').then( m => m.FiriPageModule)
   },
 ];
 
