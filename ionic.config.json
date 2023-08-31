@@ -1,5 +1,7 @@
 {
   "name": "ibnoule_mouhaibe",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
