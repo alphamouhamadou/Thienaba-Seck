@@ -163,10 +163,7 @@ const routes: Routes = [
     path: 'wazifa',
     loadChildren: () => import('./wazifa/wazifa.module').then( m => m.WazifaPageModule)
   },
-  {
-    path: 'dua',
-    loadChildren: () => import('./dua/dua.module').then( m => m.DuaPageModule)
-  },
+  
   {
     path: 'hadara',
     loadChildren: () => import('./hadara/hadara.module').then( m => m.HadaraPageModule)
