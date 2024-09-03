@@ -27,8 +27,12 @@ export class LivrePage {
     },
     // Ajoutez d'autres livres ici
   ];
-
+  
+  
   constructor() {}
-
+  openLivre(livre) {
+    // Ajoutez votre logique pour ouvrir ou afficher le livre
+    console.log('Ouverture du livre:', livre);
+  }
   
 }

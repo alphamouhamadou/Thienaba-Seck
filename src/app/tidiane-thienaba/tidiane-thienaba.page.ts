@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tidiane-thienaba',
@@ -8,7 +9,11 @@ import { Component } from '@angular/core';
 export class TidianeThienabaPage {
   selectedImage: string = './assets/img/mame.jpg'; // Remplacez par le chemin de l'image par défaut
 
-  constructor() {}
+  constructor(private router: Router) {}
+
+  navigateTo(route: string) {
+    this.router.navigate([route]);
+  }
 
   // Méthode pour afficher l'image en fonction du bouton cliqué
   showImage(type: string) {

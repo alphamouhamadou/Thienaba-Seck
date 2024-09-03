@@ -199,6 +199,10 @@ const routes: Routes = [
     path: 'ibnoule-mouhaibe',
     loadChildren: () => import('./ibnoule-mouhaibe/ibnoule-mouhaibe.module').then( m => m.IbnouleMouhaibePageModule)
   },
+  {
+    path: 'doua',
+    loadChildren: () => import('./doua/doua.module').then( m => m.DouaPageModule)
+  },
 ];
 
 @NgModule({

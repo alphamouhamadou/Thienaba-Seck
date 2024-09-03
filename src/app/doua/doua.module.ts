@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { DuaPageRoutingModule } from './dua-routing.module';
+import { DouaPageRoutingModule } from './doua-routing.module';
 
-import { DuaPage } from './dua.page';
+import { DouaPage } from './doua.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DuaPageRoutingModule
+    DouaPageRoutingModule
   ],
-  declarations: [DuaPage]
+  declarations: [DouaPage]
 })
-export class DuaPageModule {}
+export class DouaPageModule {}
