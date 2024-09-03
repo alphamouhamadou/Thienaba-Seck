@@ -6,7 +6,7 @@ import { IonicModule } from '@ionic/angular';
 
 import { FiriPageRoutingModule } from './firi-routing.module';
 
-import { FiriPage } from './firi.page';
+import { FiriPage } from './firi.page'; 
 
 @NgModule({
   imports: [
