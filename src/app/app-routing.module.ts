@@ -147,6 +147,58 @@ const routes: Routes = [
     path: 'firi',
     loadChildren: () => import('./firi/firi.module').then( m => m.FiriPageModule)
   },
+  {
+    path: 'compteur',
+    loadChildren: () => import('./compteur/compteur.module').then( m => m.CompteurPageModule)
+  },
+  {
+    path: 'tidiane-thienaba',
+    loadChildren: () => import('./tidiane-thienaba/tidiane-thienaba.module').then( m => m.TidianeThienabaPageModule)
+  },
+  {
+    path: 'wird',
+    loadChildren: () => import('./wird/wird.module').then( m => m.WirdPageModule)
+  },
+  {
+    path: 'wazifa',
+    loadChildren: () => import('./wazifa/wazifa.module').then( m => m.WazifaPageModule)
+  },
+  {
+    path: 'dua',
+    loadChildren: () => import('./dua/dua.module').then( m => m.DuaPageModule)
+  },
+  {
+    path: 'hadara',
+    loadChildren: () => import('./hadara/hadara.module').then( m => m.HadaraPageModule)
+  },
+  {
+    path: 'bibliotheque',
+    loadChildren: () => import('./bibliotheque/bibliotheque.module').then( m => m.BibliothequePageModule)
+  },
+  {
+    path: 'livre',
+    loadChildren: () => import('./livre/livre.module').then( m => m.LivrePageModule)
+  },
+  {
+    path: 'zikr',
+    loadChildren: () => import('./zikr/zikr.module').then( m => m.ZikrPageModule)
+  },
+  {
+    path: 'khalifes',
+    loadChildren: () => import('./khalifes/khalifes.module').then( m => m.KhalifesPageModule)
+  },
+  {
+    path: 'ahmadou',
+    loadChildren: () => import('./ahmadou/ahmadou.module').then( m => m.AhmadouPageModule)
+  },
+  {
+    path: 'mame-ahmadou',
+    loadChildren: () => import('./mame-ahmadou/mame-ahmadou.module').then( m => m.MameAhmadouPageModule)
+  },
+  {
+    path: 'ibnoule-mouhaibe',
+    loadChildren: () => import('./ibnoule-mouhaibe/ibnoule-mouhaibe.module').then( m => m.IbnouleMouhaibePageModule)
+  },
 ];
 
 @NgModule({

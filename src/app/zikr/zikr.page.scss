@@ -1,0 +1,33 @@
+.track-title {
+    font-size: 1.5em; /* Taille de police augmentée */
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  ion-thumbnail {
+    --border-radius: 8px;
+    --size: 60px; /* Ajuster la taille de l'image */
+    margin-right: 10px;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: lightgray;
+    cursor: pointer;
+    position: relative;
+    margin: 10px 0;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: blue;
+  }
+  
+  .time-display {
+    font-size: 0.9em;
+    margin-top: 5px;
+    text-align: right;
+    color: #666;
+  }
+  

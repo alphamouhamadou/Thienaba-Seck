@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Les Khalifes de Thienaba</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let khalife of khalifes">
+      <ion-card>
+        <ion-img [src]="khalife.imagePath" alt="{{ khalife.name }}"></ion-img>
+        <ion-card-header>
+          <ion-card-title>{{ khalife.name }}</ion-card-title>
+          <ion-card-subtitle>{{ khalife.mandate }}</ion-card-subtitle>
+        </ion-card-header>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+</ion-content>

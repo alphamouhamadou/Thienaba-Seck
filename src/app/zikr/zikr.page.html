@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Zikr</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let track of playlist; let i = index">
+      <ion-thumbnail slot="start">
+        <img [src]="track.image" alt="{{ track.title }}" />
+      </ion-thumbnail>
+      <ion-label>
+        <h2 class="track-title">{{ track.title }}</h2>
+        <div *ngIf="currentTrackIndex === i">
+          <div (click)="seekTo($event)" class="progress-bar">
+            <div class="progress" [style.width.%]="progress * 100"></div>
+          </div>
+          <div class="time-display">{{ formatTime(currentTime) }} / {{ formatTime(duration) }}</div>
+        </div>
+      </ion-label>
+      <ion-button fill="clear" slot="end" (click)="togglePlayPause(track, i)">
+        <ion-icon [name]="currentTrackIndex === i && isPlaying ? 'pause' : 'play'"></ion-icon>
+      </ion-button>
+    </ion-item>
+  </ion-list>
+  <ion-button expand="block" color="danger" (click)="stopTrack()">STOP</ion-button>
+</ion-content>

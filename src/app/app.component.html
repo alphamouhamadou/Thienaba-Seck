@@ -1,3 +1,65 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <!-- Menu latéral principal -->
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>MENU</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+        <!-- Liens vers les différentes pages principales -->
+        <ion-item routerLink="/home" routerDirection="root" lines="none" color="light">
+          <ion-icon name="home-outline" slot="start"></ion-icon>
+          <ion-label>Accueil</ion-label>
+        </ion-item>
+
+        <ion-item routerLink="/mame-ahmadou" routerDirection="root" lines="none" color="light">
+          <ion-icon name="person-outline" slot="start"></ion-icon>
+          <ion-label>Mame Ahmadou Ndack Seck</ion-label>
+        </ion-item>
+
+        <!-- Item pour Tidiane Thienaba avec un bouton pour afficher/cacher le sous-menu -->
+        <ion-item (click)="toggleSubMenu()" lines="none" color="light">
+          <ion-icon name="book-outline" slot="start"></ion-icon>
+          <ion-label>Tidiane Thienaba</ion-label>
+          <ion-icon [name]="showSubMenu ? 'chevron-up' : 'chevron-down'" slot="end"></ion-icon>
+        </ion-item>
+
+        <!-- Sous-menu pour Tidiane Thienaba -->
+        <ion-list *ngIf="showSubMenu" class="sub-menu">
+          <ion-item routerLink="/tidiane-thienaba/bibliotheque" routerDirection="root" lines="none" color="tertiary">
+            <ion-icon name="library-outline" slot="start"></ion-icon>
+            <ion-label>Bibliothèque</ion-label>
+          </ion-item>
+          <ion-item routerLink="/tidiane-thienaba/wird" routerDirection="root" lines="none" color="tertiary">
+            <ion-icon name="bookmarks-outline" slot="start"></ion-icon>
+            <ion-label>Wird</ion-label>
+          </ion-item>
+          <ion-item routerLink="/tidiane-thienaba/wazifa" routerDirection="root" lines="none" color="tertiary">
+            <ion-icon name="bookmark-outline" slot="start"></ion-icon>
+            <ion-label>Wazifa</ion-label>
+          </ion-item>
+          <ion-item routerLink="/tidiane-thienaba/hadara-jouma" routerDirection="root" lines="none" color="tertiary">
+            <ion-icon name="calendar-outline" slot="start"></ion-icon>
+            <ion-label>Hadara Jouma</ion-label>
+          </ion-item>
+        </ion-list>
+
+        <ion-item routerLink="/khalifes" routerDirection="root" lines="none" color="light">
+          <ion-icon name="people-outline" slot="start"></ion-icon>
+          <ion-label>Les Khalifes</ion-label>
+        </ion-item>
+
+        <ion-item routerLink="/ibnoul" routerDirection="root" lines="none" color="light">
+          <ion-icon name="school-outline" slot="start"></ion-icon>
+          <ion-label>Ibnoul Mouhaibe</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <!-- Contenu principal -->
+  <ion-router-outlet id="main-content"></ion-router-outlet>
 </ion-app>

@@ -1,0 +1,44 @@
+.content-wrapper {
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .center-text {
+    text-align: center;
+    margin: 16px 0;
+    font-size: 1.2em;
+  }
+  
+  .text-arabic {
+    font-family: 'Amiri', serif; /* Utiliser une police adaptée pour l'arabe */
+    font-size: 1.1em;
+    line-height: 1.6;
+    direction: rtl; /* Alignement de droite à gauche */
+    margin: 20px 0; /* Espacement pour bien séparer du reste */
+    text-align: center; /* Centrer le texte */
+  }
+  
+  .arabic-text {
+    font-family: 'Amiri', serif;
+    font-size: 1.1em;
+    line-height: 1.6;
+    direction: rtl; 
+    margin-bottom: 8px;
+  }
+  
+  .french-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 16px;
+  }
+  
+  p {
+    margin: 16px 0;
+  }
+  
+  h2 {
+    color: #333; /* Couleur du texte des titres */
+  }
+  

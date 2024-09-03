@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Tasbih</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="tasbih-container">
+    <ion-text color="warning">
+      <h2>Rappel : 100</h2>
+    </ion-text>
+
+    <div class="tasbih-circle">
+      <div class="tasbih-background">
+        <div class="tasbih-counter-circle">
+          <h1>{{ counter }}</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="tasbih-controls">
+      <ion-button fill="clear" (click)="toggleSound()">
+        <ion-icon [name]="isSoundEnabled ? 'volume-high' : 'volume-mute'" [color]="isSoundEnabled ? 'primary' : 'light'"></ion-icon>
+      </ion-button>
+
+      <ion-button fill="solid" color="medium" class="increment-button" (click)="incrementCounter()">
+        <ion-icon name="add" class="increment-icon"></ion-icon>
+      </ion-button>
+
+      <ion-button fill="clear" (click)="toggleVibration()">
+        <ion-icon [name]="isVibrationEnabled ? 'vibration' : 'vibration-off'" class="vibration-icon"></ion-icon>
+      </ion-button>
+    </div>
+
+    <div class="tasbih-reset">
+      <ion-button fill="solid" color="danger" shape="round" (click)="resetCounter()">
+        <ion-icon name="refresh" size="large"></ion-icon>
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

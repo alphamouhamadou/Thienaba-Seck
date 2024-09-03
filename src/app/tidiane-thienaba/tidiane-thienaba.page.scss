@@ -1,0 +1,52 @@
+.tidiane-button {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    --background: var(--ion-color-primary);
+    --color: white;
+}
+
+.tidiane-button ion-icon {
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+}
+
+.tidiane-button ion-label {
+    font-size: 1.2rem;
+}
+
+.tool {
+    color: #333;
+    text-align: center;
+    background-color: #3498db;
+}
+
+ion-slides {
+    height: 200px; /* Ajustez la hauteur selon vos besoins */
+}
+
+ion-slide img {
+    object-fit: cover; /* Ajuste l'image pour qu'elle remplisse la diapositive */
+    height: 100%; /* L'image prend toute la hauteur du slide */
+    width: 100%; /* L'image prend toute la largeur du slide */
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.image-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}

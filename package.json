@@ -19,14 +19,21 @@
     "@angular/platform-browser": "^15.0.0",
     "@angular/platform-browser-dynamic": "^15.0.0",
     "@angular/router": "^15.0.0",
+    "@ionic-native/vibration": "^5.36.0",
     "@ionic/angular": "^6.1.9",
+    "@types/howler": "^2.2.11",
+    "howler": "^2.2.4",
     "ionicons": "^6.0.3",
-    "rxjs": "~7.5.0",
+    "postcss": "^8.4.44",
+    "rxjs": "^6.6.7",
+    "semver": "^7.6.3",
     "tslib": "^2.3.0",
+    "webpack": "^5.94.0",
+    "webpack-dev-middleware": "^7.4.2",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^15.0.0",
+    "@angular-devkit/build-angular": "^18.2.2",
     "@angular-eslint/builder": "^14.0.0",
     "@angular-eslint/eslint-plugin": "^14.0.0",
     "@angular-eslint/eslint-plugin-template": "^14.0.0",
@@ -47,6 +54,7 @@
     "cordova-plugin-ionic-webview": "^5.0.0",
     "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-statusbar": "^2.4.2",
+    "cordova-plugin-vibration": "^3.1.1",
     "eslint": "^7.6.0",
     "eslint-plugin-import": "2.22.1",
     "eslint-plugin-jsdoc": "30.7.6",
@@ -69,7 +77,8 @@
       "cordova-plugin-device": {},
       "cordova-plugin-splashscreen": {},
       "cordova-plugin-ionic-webview": {},
-      "cordova-plugin-ionic-keyboard": {}
+      "cordova-plugin-ionic-keyboard": {},
+      "cordova-plugin-vibration": {}
     },
     "platforms": [
       "android"

@@ -71,6 +71,16 @@
             }
           ]
         }
+      },
+      "AndroidManifest.xml": {
+        "parents": {
+          "/manifest": [
+            {
+              "xml": "<uses-permission android:name=\"android.permission.VIBRATE\" />",
+              "count": 1
+            }
+          ]
+        }
       }
     }
   },
@@ -88,6 +98,9 @@
       "PACKAGE_NAME": "io.ionic.starter"
     },
     "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "io.ionic.starter"
+    },
+    "cordova-plugin-vibration": {
       "PACKAGE_NAME": "io.ionic.starter"
     }
   },
@@ -139,6 +152,7 @@
     "cordova-plugin-ionic-keyboard": "2.2.0",
     "cordova-plugin-ionic-webview": "5.0.0",
     "cordova-plugin-splashscreen": "5.0.2",
-    "cordova-plugin-statusbar": "2.4.2"
+    "cordova-plugin-statusbar": "2.4.2",
+    "cordova-plugin-vibration": "3.1.1"
   }
 }

@@ -1,0 +1,67 @@
+/* Styles généraux pour la page */
+ion-content {
+    --background: #f5f5f5; /* Couleur de fond douce */
+    padding: 16px;
+  }
+  
+  /* Style des boutons de langue */
+  .button-group {
+    display: flex;
+    justify-content: space-around; /* Espace égal entre les boutons */
+    margin-bottom: 20px; /* Espace en dessous des boutons */
+  }
+  
+  ion-button {
+    width: 30%; /* Largeur des boutons */
+    --border-radius: 10px; /* Coins arrondis */
+    --background: #4caf50; /* Couleur de fond verte pour les boutons */
+    --color: #ffffff; /* Couleur du texte en blanc */
+    text-transform: uppercase; /* Mettre le texte en majuscule */
+    font-weight: bold; /* Mettre le texte en gras */
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  }
+  
+  /* Styles pour les sections de texte */
+  .text-arabic, .text-transcription, .text-french {
+    background: #ffffff; /* Fond blanc */
+    padding: 20px; /* Espacement interne */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Légère ombre pour l'effet de carte */
+    margin-bottom: 20px; /* Espacement en dessous de chaque section */
+    overflow-x: auto; /* Permettre le défilement horizontal si nécessaire */
+    text-align: center; /* Centrer le texte */
+  }
+  
+  /* Style spécifique pour le texte arabe */
+  .text-arabic {
+    direction: rtl; /* De droite à gauche pour le texte arabe */
+    font-family: 'Amiri', serif; /* Police spécifique pour le texte arabe */
+    font-size: 18px; /* Taille de police */
+    color: #2c3e50; /* Couleur du texte */
+    white-space: nowrap; /* Empêche les coupures de lignes dans les mots arabes */
+    overflow-x: auto; /* Activer le défilement horizontal si nécessaire */
+  }
+  
+  /* Style spécifique pour le texte de la transcription */
+  .text-transcription {
+    font-family: 'Roboto', sans-serif; /* Police standard */
+    font-size: 16px; /* Taille de police */
+    color: #2c3e50; /* Couleur du texte */
+    text-align: center; /* Centrer le texte */
+  }
+  
+  /* Style spécifique pour le texte de la traduction française */
+  .text-french {
+    font-family: 'Roboto', sans-serif; /* Police standard */
+    font-size: 16px; /* Taille de police */
+    color: #2c3e50; /* Couleur du texte */
+    text-align: center; /* Centrer le texte */
+  }
+  
+  /* Style pour le texte dans chaque section */
+  .tex {
+    line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+    margin: 0; /* Pas de marge par défaut */
+    text-align: center; /* Centrer le texte */
+  }
+  

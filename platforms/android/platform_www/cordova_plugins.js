@@ -46,6 +46,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-ionic-keyboard": "2.2.0",
     "cordova-plugin-ionic-webview": "5.0.0",
     "cordova-plugin-splashscreen": "5.0.2",
-    "cordova-plugin-statusbar": "2.4.2"
+    "cordova-plugin-statusbar": "2.4.2",
+    "cordova-plugin-vibration": "3.1.1"
   };
 });

@@ -1,0 +1,36 @@
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espace entre les boutons */
+  }
+  
+  .grid-button {
+    width: 40%;
+    height: 100px;
+    border-radius: 20px;
+    font-size: 18px;
+    --background: var(--ion-color-light); /* Couleur de fond des boutons */
+    --color: var(--ion-color-primary); /* Couleur du texte et des icônes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    --box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Ombre pour effet de carte */
+  }
+  
+  .grid-button.blue {
+    --background: #007bff; /* Couleur personnalisée pour le bouton Zikr */
+    --color: #ffffff;
+  }
+  
+  .grid-button.green {
+    --background: #28a745; /* Couleur personnalisée pour le bouton Nianou Wazifa */
+    --color: #ffffff;
+  }
+  
+  .grid-button.orange {
+    --background: #ffa500; /* Couleur personnalisée pour le bouton Livre */
+    --color: #ffffff;
+  }
+  

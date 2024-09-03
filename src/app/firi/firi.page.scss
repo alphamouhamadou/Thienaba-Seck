@@ -1,7 +1,53 @@
 .video-container {
-    iframe {
-      width: 100%;
-      height: 200px; /* Ajustez la hauteur comme nécessaire */
-    }
+  iframe {
+    width: 100%;
+    height: 300px; /* Ajustez la hauteur comme nécessaire */
   }
-  
+}
+
+ion-item::part(native) {
+  background: #19422d;
+  color: #fff;
+  border-color: #fff;
+  border-style: dashed;
+  border-width: 2px;
+  border-radius: 20px;
+}
+
+ion-item::part(detail-icon) {
+  color: white;
+  opacity: 1;
+  font-size: 20px;
+}
+
+ion-title {
+  background: #19422d;
+  color: #fff;
+  width: 190px;
+  border-color: #fff;
+  border-style: dashed;
+  border-width: 2px;
+  border-radius: 20px;
+  text-align: center; /* Centre le texte du titre */
+  margin: 0 auto; /* Centre l'élément dans son conteneur */
+  display: block; /* Assure que le titre est un bloc pour l'alignement centré */
+}
+
+.monfooter {
+  height: 2px;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+}
+
+.foot {
+  position: relative;
+  width: 100%;
+  height: 35px;
+  background-color: black;
+}
+
+ion-label {
+  text-align: center;
+  display: block; /* Assure que le label prend tout l'espace pour le centrage */
+}

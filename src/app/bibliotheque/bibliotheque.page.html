@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Bibliothèque</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="grid-container">
+    <ion-button class="grid-button blue" expand="block" routerLink="/zikr">
+      <ion-icon slot="start" name="musical-notes-outline"></ion-icon>
+      <span>ZIKR</span>
+    </ion-button>
+
+    <ion-button class="grid-button green" expand="block" routerLink="/doua">
+      <ion-icon slot="start" name="book-outline"></ion-icon>
+      <span>Nianou Wazifa</span>
+    </ion-button>
+
+    <ion-button class="grid-button orange" expand="block" routerLink="/livre">
+      <ion-icon slot="start" name="library-outline"></ion-icon>
+      <span>Livre</span>
+    </ion-button>
+  </div>
+</ion-content>

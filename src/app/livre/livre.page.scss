@@ -1,0 +1,30 @@
+ion-card {
+    margin: 10px;
+    --background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  ion-card:hover {
+    transform: scale(1.05);
+  }
+  
+  ion-img {
+    height: auto; /* Ajuste automatiquement la hauteur pour conserver le ratio de l'image */
+    object-fit: contain; /* Permet de contenir l'image en entier dans le conteneur */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+  
+  ion-card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  ion-card-subtitle {
+    font-size: 14px;
+    color: #666;
+  }
+  

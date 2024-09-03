@@ -1,32 +1,55 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-
-        <ion-label><img src="./assets/img/mame.jpeg" alt=""></ion-label>
-        </ion-toolbar>
+    <ion-title>Bienvenue à Thienaba</ion-title>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content>
+  <ion-img src="./assets/mame.jpg" alt="Mame" style="width: 100%; height: 200px; object-fit: cover;"></ion-img>
 
-  <ion-item >
-    <ion-label><h1>Ibnoul Mouhaïbe</h1></ion-label>
-  </ion-item>
-    <tr>
-      <td>
-  <ion-item routerLink="/ibnoul" >
-    <img src="./assets/img/ibn.jpg" alt="">
-    
-  </ion-item>
-     </td>
-     <td>
-  <ion-item routerLink="/firi">
-    <img src="./assets/img/firi.jpg" alt="">
-    
-  </ion-item>
-</td>
-</tr>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card button routerLink="/mame-ahmadou">
+          <ion-img src="./assets/mame_ahmadou.jpg" alt="Mame Ahmadou Ndack Seck"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Mame Ahmadou Ndack Seck</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
 
+      <ion-col size="6">
+        <ion-card button routerLink="/tidiane-thienaba">
+          <ion-img src="./assets/tidiane_thienaba.jpg" alt="Tidiane-Thienaba"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Tidiane-Thienaba</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="6">
+        <ion-card button routerLink="/khalifes">
+          <ion-img src="./assets/khalifes.jpg" alt="Les Khalifes de Thienaba"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Les Khalifes de Thienaba</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="6">
+        <ion-card button routerLink="/ibnoule-mouhaibe">
+          <ion-img src="./assets/ibnoule_mouhaibe.jpg" alt="Ibnoule-Mouhaibe"></ion-img>
+          <ion-card-header>
+            <ion-card-title>Ibnoule-Mouhaibe</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
 
- <ion-footer class="foot">
-  <p class="monfooter">powerted by Alpha M Diop</p>
- </ion-footer>
+<ion-footer class="foot">
+  <p class="monfooter">Powered by Alpha M Diop</p>
+</ion-footer>

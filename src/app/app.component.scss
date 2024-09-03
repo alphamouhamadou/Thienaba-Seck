@@ -1,0 +1,34 @@
+/* Styles pour le menu */
+ion-menu {
+    --background: #ffffff; /* Arrière-plan blanc */
+  }
+  
+  ion-toolbar {
+    --background: #3498db; /* Couleur primaire pour l'en-tête du menu */
+    --color: #ffffff; /* Couleur du texte de l'en-tête */
+  }
+  
+  ion-item {
+    --ripple-color: #3498db; /* Couleur de l'effet de clic */
+  }
+  
+  ion-item.ion-activated {
+    --background: #e0f7fa; /* Couleur de fond lors de la sélection */
+  }
+  
+  ion-icon {
+    color: #3498db; /* Couleur des icônes */
+  }
+  
+  .sub-menu ion-item {
+    padding-left: 30px; /* Indentation pour les sous-menus */
+  }
+  
+  .sub-menu ion-item ion-icon {
+    color: #2ecc71; /* Couleur des icônes dans le sous-menu */
+  }
+  
+  .sub-menu {
+    transition: max-height 0.3s ease-in-out; /* Animation pour le sous-menu */
+  }
+  
