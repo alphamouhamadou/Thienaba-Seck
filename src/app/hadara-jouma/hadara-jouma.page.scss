@@ -1,0 +1,86 @@
+/* Styles généraux pour le contenu */
+ion-content {
+    --background: #f5f5f5; /* Couleur de fond douce */
+    padding: 16px; /* Espacement autour du contenu */
+  }
+  
+  /* Wrapper pour centrer et organiser le contenu */
+  .content-wrapper {
+    padding: 16px;
+    text-align: center; /* Centre les titres et paragraphes */
+  }
+  
+  /* Style pour les titres */
+  .center-text {
+    text-align: center;
+    margin: 16px 0;
+    font-size: 1.2em;
+    color: #333; /* Couleur du texte des titres */
+    font-weight: bold; /* Mettre les titres en gras */
+  }
+  
+  /* Style pour le texte arabe */
+  .arabic-text {
+    font-family: 'Amiri', serif; /* Utiliser une police adaptée pour l'arabe */
+    font-size: 26px; /* Taille de police pour le texte arabe */
+    line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+    direction: rtl; /* Alignement de droite à gauche */
+    margin: 20px 0; /* Espacement pour bien séparer du reste */
+    text-align: center; /* Centrer le texte */
+    white-space: pre-line; /* Conserve les sauts de ligne */
+  }
+  .text-arabic {
+    font-family: 'Amiri', serif; /* Utiliser une police adaptée pour l'arabe */
+    font-size: 26px; /* Taille de police pour le texte arabe */
+    line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+    direction: rtl; /* Alignement de droite à gauche */
+    margin: 20px 0; /* Espacement pour bien séparer du reste */
+    text-align: center; /* Centrer le texte */
+    white-space: pre-line; /* Conserve les sauts de ligne */
+  }
+  
+  /* Style pour le texte de la transcription */
+  .text-transliteration {
+    font-family: 'Roboto', sans-serif; /* Police standard pour la transcription */
+    font-size: 1.1em; /* Taille de police */
+    line-height: 1.6; /* Hauteur de ligne */
+    text-align: justify; /* Justifier le texte pour un alignement net */
+    margin: 20px 0; /* Espacement en bas */
+  }
+  
+  /* Style pour le texte français */
+  .french-text {
+    font-family: 'Roboto', sans-serif; /* Police standard pour le texte français */
+    font-size: 1em; /* Taille de police */
+    line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+    text-align: center; /* Justifier le texte */
+    color: #2c3e50; /* Couleur du texte */
+    margin: 16px 0; /* Espacement autour du texte */
+  }
+  
+  /* Style pour les paragraphes */
+  p {
+    margin: 16px 0; /* Marges pour espacer les paragraphes */
+  }
+  
+  /* Style des titres */
+  h2 {
+    color: #333; /* Couleur des titres */
+    font-size: 1.3em; /* Taille des titres */
+    margin: 16px 0; /* Espacement pour les titres */
+  }
+
+  .monfooter{
+    height: 2px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    
+   }
+   .foot{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    background-color: black;
+    
+   }

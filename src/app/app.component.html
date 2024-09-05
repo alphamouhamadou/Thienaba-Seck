@@ -29,19 +29,23 @@
 
         <!-- Sous-menu pour Tidiane Thienaba -->
         <ion-list *ngIf="showSubMenu" class="sub-menu">
-          <ion-item routerLink="/tidiane-thienaba/bibliotheque" routerDirection="root" lines="none" color="tertiary">
+          <ion-item routerLink="/tidiane-thienaba" routerDirection="root" lines="none" color="tertiary">
+            <ion-icon name="library-outline" slot="start"></ion-icon>
+            <ion-label>Silsila Thienaba</ion-label>
+          </ion-item>
+          <ion-item routerLink="/bibliotheque" routerDirection="root" lines="none" color="tertiary">
             <ion-icon name="library-outline" slot="start"></ion-icon>
             <ion-label>Bibliothèque</ion-label>
           </ion-item>
-          <ion-item routerLink="/tidiane-thienaba/wird" routerDirection="root" lines="none" color="tertiary">
+          <ion-item routerLink="/wird" routerDirection="root" lines="none" color="tertiary">
             <ion-icon name="bookmarks-outline" slot="start"></ion-icon>
             <ion-label>Wird</ion-label>
           </ion-item>
-          <ion-item routerLink="/tidiane-thienaba/wazifa" routerDirection="root" lines="none" color="tertiary">
+          <ion-item routerLink="/wazifa" routerDirection="root" lines="none" color="tertiary">
             <ion-icon name="bookmark-outline" slot="start"></ion-icon>
             <ion-label>Wazifa</ion-label>
           </ion-item>
-          <ion-item routerLink="/tidiane-thienaba/hadara-jouma" routerDirection="root" lines="none" color="tertiary">
+          <ion-item routerLink="/hadara-jouma" routerDirection="root" lines="none" color="tertiary">
             <ion-icon name="calendar-outline" slot="start"></ion-icon>
             <ion-label>Hadara Jouma</ion-label>
           </ion-item>

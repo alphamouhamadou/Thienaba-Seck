@@ -1,19 +1,41 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Les Khalifes de Thienaba</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title style="text-align: center;">Les Khalifes de Thienaba</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item *ngFor="let khalife of khalifes">
-      <ion-card>
-        <ion-img [src]="khalife.imagePath" alt="{{ khalife.name }}"></ion-img>
+  <!-- Affichage de Serigne Assane Seck seul en haut et centré -->
+  <div class="center-khalife">
+    <ion-card class="khalife-card">
+      <ion-img src="assets/img/khalife9.jpg" alt="Serigne Assane Seck" class="khalife-image"></ion-img>
+      <ion-card-header>
+        <ion-card-title>Serigne Assane Seck</ion-card-title>
+        <ion-card-subtitle>Actuel Khalif depuis 2021</ion-card-subtitle>
+      </ion-card-header>
+    </ion-card>
+  </div>
+
+  <!-- Grille pour les autres Khalifes -->
+  <div class="grid-container">
+    <ng-container *ngFor="let khalife of khalifes">
+      <ion-card class="khalife-card" *ngIf="khalife.name !== 'Serigne Assane Seck'">
+        <ion-img [src]="khalife.imagePath" alt="{{ khalife.name }}" class="khalife-image"></ion-img>
         <ion-card-header>
           <ion-card-title>{{ khalife.name }}</ion-card-title>
           <ion-card-subtitle>{{ khalife.mandate }}</ion-card-subtitle>
         </ion-card-header>
       </ion-card>
-    </ion-item>
-  </ion-list>
+    </ng-container>
+  </div>
 </ion-content>
+
+<ion-footer class="foot">
+  <p class="monfooter">Powerted by Alpha M Diop ibn Sope Naby</p>
+</ion-footer>

@@ -8,28 +8,20 @@ import { Component } from '@angular/core';
 export class LivrePage {
   livres = [
     { 
-      title: 'Livre 1', 
-      subtitle: 'Auteur 1', 
-      imagePath: 'assets/img/livre1.jpg', 
-      description: 'Description du livre 1' 
+      title: 'Samba Saajo. La voix des martyrs', 
+      subtitle: 'Pr Souleymane DIA, 2005', 
+      imagePath: 'assets/img/jule.jpg', // Update with your actual image path
+      description: 'La voix des martyrs racontée par Pr Souleymane DIA.'
     },
     { 
-      title: 'Livre 2', 
-      subtitle: 'Auteur 2', 
-      imagePath: 'assets/img/livre2.jpg', 
-      description: 'Description du livre 2' 
+      title: 'Sur les traces de la communauté Tijane de Thiénaba Seck', 
+      subtitle: 'Dr Daouda Diop, 2023', 
+      imagePath: 'assets/img/daoda.jpg', // Update with your actual image path
+      description: 'Espaces, orthodoxie et économie confrérique par Dr Daouda Diop.'
     },
-    { 
-      title: 'Livre 3', 
-      subtitle: 'Auteur 3', 
-      imagePath: 'assets/img/livre3.jpg', 
-      description: 'Description du livre 3' 
-    },
-    // Ajoutez d'autres livres ici
   ];
 
   constructor() {}
-  
 
   openLivre(livre: any) {
     // Ajoutez votre logique pour ouvrir ou afficher le livre

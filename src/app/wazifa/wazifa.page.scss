@@ -1,0 +1,100 @@
+/* Styles généraux pour la page */
+ion-content {
+    --background: #f5f5f5; /* Couleur de fond douce */
+    padding: 16px;
+  }
+  
+  /* Conteneur principal */
+  .content-wrapper {
+    padding: 16px;
+    text-align: center;
+  }
+  
+  /* Styles pour les titres centraux */
+  .center-text {
+    text-align: center;
+    margin: 16px 0;
+    font-size: 1.2em;
+    color: #333; /* Couleur du texte des titres */
+  }
+  
+  /* Style pour le texte arabe */
+  .arabic-text {
+    font-family: 'Amiri', serif; /* Police adaptée pour l'arabe */
+    font-size: 25px;
+    line-height: 1.6;
+    direction: rtl; /* Alignement de droite à gauche */
+    margin: 20px 0; /* Espacement pour bien séparer du reste */
+    text-align: center; /* Centrer le texte */
+  }
+
+  .text-arabic {
+    font-family: 'Amiri', serif; /* Police adaptée pour l'arabe */
+    font-size: 25px;
+    line-height: 1.6;
+    direction: rtl; /* Alignement de droite à gauche */
+    margin: 20px 0; /* Espacement pour bien séparer du reste */
+    text-align: center; /* Centrer le texte */
+  }
+  
+  /* Style pour le texte français */
+  .french-text {
+    font-family: 'Roboto', sans-serif; /* Police standard */
+    font-size: 1em; /* Taille de police */
+    line-height: 1.6;
+    text-align: center; /* Justifier le texte */
+    margin-bottom: 16px; /* Espacement en dessous */
+    color: #2c3e50; /* Couleur du texte */
+  }
+  
+  /* Style pour les boutons de langue */
+  .button-group {
+    display: flex;
+    justify-content: space-around; /* Espace égal entre les boutons */
+    margin-bottom: 20px; /* Espace en dessous des boutons */
+  }
+  
+  ion-button {
+    width: 30%; /* Largeur des boutons */
+    --border-radius: 10px; /* Coins arrondis */
+    --background: #4caf50; /* Couleur de fond verte pour les boutons */
+    --color: #ffffff; /* Couleur du texte en blanc */
+    text-transform: uppercase; /* Mettre le texte en majuscule */
+    font-weight: bold; /* Mettre le texte en gras */
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  }
+  
+  /* Style pour les paragraphes */
+  p {
+    margin: 16px 0;
+  }
+  
+  /* Ajustements pour les petits écrans */
+  @media (max-width: 600px) {
+    .center-text {
+      font-size: 1.1em; /* Réduire légèrement la taille des titres */
+    }
+    
+    .arabic-text {
+        font-size: 24px; /* Adapter la taille du texte pour les petits écrans */
+      }
+    
+    .french-text {
+      font-size: 15px; /* Adapter la taille du texte pour les petits écrans */
+    }
+  }
+  
+  .monfooter{
+    height: 2px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    
+   }
+   .foot{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    background-color: black;
+    
+   }

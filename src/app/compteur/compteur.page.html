@@ -1,14 +1,22 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Tasbih</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title></ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <!-- Image Display -->
+  <div class="image-container">
+    <img src="./assets/img/sikar.jpg" alt="Sikar Image" />
+  </div>
+
   <div class="tasbih-container">
-    <ion-text color="warning">
-      <h2>Rappel : 100</h2>
-    </ion-text>
 
     <div class="tasbih-circle">
       <div class="tasbih-background">
@@ -39,3 +47,7 @@
     </div>
   </div>
 </ion-content>
+
+<ion-footer class="foot">
+  <p class="monfooter">Powerted by Alpha M Diop ibn Sope Naby</p>
+</ion-footer>

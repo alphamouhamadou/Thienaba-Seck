@@ -1,0 +1,68 @@
+/* Styles pour l'en-tête */
+ion-header {
+    --background: rgba(255, 255, 255, 0.9); /* Fond translucide */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  }
+  
+  ion-toolbar {
+    --ion-background-color: #f8f9fa; /* Couleur de fond claire */
+    --ion-text-color: #333; /* Couleur du texte */
+  }
+  
+  ion-title {
+    text-align: center;
+    font-weight: bold; /* Texte en gras */
+    color: #333; /* Couleur du titre */
+  }
+  
+  /* Styles pour le contenu */
+  ion-content {
+    --background: #fff; /* Fond blanc */
+    padding: 16px; /* Espace autour du contenu */
+  }
+  
+  /* Image principale */
+  ion-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px; /* Coins arrondis */
+    margin-bottom: 16px; /* Espace sous l'image */
+  }
+  
+  /* Carte contenant le contenu */
+  ion-card {
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    overflow: hidden; /* Empêche le débordement */
+  }
+  
+  ion-card-content {
+    font-size: 16px;
+    line-height: 1.6; /* Hauteur de ligne pour une meilleure lisibilité */
+    color: #555; /* Couleur du texte */
+    text-align: justify; /* Justifier le texte */
+  }
+  
+  /* Styles pour le pied de page */
+  .monfooter{
+    height: 2px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    
+   }
+   .monfooter{
+    height: 2px;
+    text-align: center;
+    width: 100%;
+    color: #fff;
+    
+   }
+   .foot{
+    position: relative;
+    width: 100%;
+    height: 35px;
+    background-color: black;
+    
+   }

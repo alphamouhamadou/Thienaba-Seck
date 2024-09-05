@@ -164,10 +164,7 @@ const routes: Routes = [
     loadChildren: () => import('./wazifa/wazifa.module').then( m => m.WazifaPageModule)
   },
   
-  {
-    path: 'hadara',
-    loadChildren: () => import('./hadara/hadara.module').then( m => m.HadaraPageModule)
-  },
+ 
   {
     path: 'bibliotheque',
     loadChildren: () => import('./bibliotheque/bibliotheque.module').then( m => m.BibliothequePageModule)
@@ -199,6 +196,10 @@ const routes: Routes = [
   {
     path: 'doua',
     loadChildren: () => import('./doua/doua.module').then( m => m.DouaPageModule)
+  },
+  {
+    path: 'hadara-jouma',
+    loadChildren: () => import('./hadara-jouma/hadara-jouma.module').then( m => m.HadaraJoumaPageModule)
   },
 ];
 

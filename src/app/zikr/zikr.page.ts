@@ -10,9 +10,9 @@ import { ChangeDetectorRef } from '@angular/core';
 export class ZikrPage implements OnDestroy {
   playlist = [
     { title: 'Pape Mor Gueye', image: 'assets/img/pap.jpg', file: 'assets/aud/zikr1.mp3' },
-    { title: 'Serigne Adama Seck', image: 'assets/img/adama.jpg', file: 'assets/aud/zikr2.mp3' },
-    { title: 'Dahira Ibnoule Mouhaib', image: 'assets/img/dahira.jpg', file: 'assets/aud/zikr3d.mp3' },
-    { title: 'Sikar', image: 'assets/img/dahira.jpg', file: 'assets/aud/sikar.mp3' },
+    { title: 'Serigne Adama Seck', image: 'assets/img/ada.jpg', file: 'assets/aud/zikr2.mp3' },
+    { title: 'Dahira Ibnoule Mouhaib', image: 'assets/img/ib.jpg', file: 'assets/aud/zikr3d.mp3' },
+    { title: 'Sikar', image: 'assets/img/sikr.jpg', file: 'assets/aud/sikar.mp3' },
   ];
   
   currentTrack: Howl | null = null;

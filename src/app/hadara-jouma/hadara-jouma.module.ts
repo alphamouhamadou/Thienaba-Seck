@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { HadaraPageRoutingModule } from './hadara-routing.module';
+import { HadaraJoumaPageRoutingModule } from './hadara-jouma-routing.module';
 
-import { HadaraPage } from './hadara.page';
+import { HadaraJoumaPage } from './hadara-jouma.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HadaraPageRoutingModule
+    HadaraJoumaPageRoutingModule
   ],
-  declarations: [HadaraPage]
+  declarations: [HadaraJoumaPage]
 })
-export class HadaraPageModule {}
+export class HadaraJoumaPageModule {}
