@@ -1,0 +1,23 @@
+workflows:
+  build-ionic-ios:
+    name: Build Thienaba Seck iOS
+    environment:
+      xcode: latest
+      cocoapods: default
+      flutter: stable
+    scripts:
+      - name: Install dependencies
+        script: |
+          npm install -g @ionic/cli
+          npm install
+      - name: Build Ionic iOS
+        script: |
+          ionic cordova build ios --release
+    artifacts:
+      - build/ios/**/*.ipa
+    publishing:
+      app_store_connect:
+        apple_id: "diopalpha10@gmail.com"
+        app_specific_password: "gyzz-pabz-rdzh-vckp"
+        bundle_id: "io.ibnoulmouhaib.starter"
+        submit_to_app_store: true
