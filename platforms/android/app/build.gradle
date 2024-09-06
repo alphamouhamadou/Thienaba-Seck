@@ -193,6 +193,9 @@ android {
         compileSdkVersion cordovaConfig.COMPILE_SDK_VERSION
     }
 
+    lintOptions {
+      abortOnError false
+    }
 
     buildToolsVersion cordovaConfig.BUILD_TOOLS_VERSION
 
@@ -273,9 +276,6 @@ android {
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
-    }
-    lint {
-        abortOnError false
     }
 }
 
